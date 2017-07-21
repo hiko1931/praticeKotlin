@@ -9,14 +9,13 @@ package Base
 fun main(args: Array<String>):Unit{
     //값의 참조 동일성은 유지 안됨.
     val a: Int = 10000
-    print(a===a) //'true'를 출력하겠지
+    println(a===a) //'true'를 출력하겠지
     val boxedA: Int? = a
     val anotherBoxedA: Int? = a
-    print(boxedA === anotherBoxedA) // 'false'를 출력!!
+    println(boxedA === anotherBoxedA) // 'false'를 출력!!
 
     //값의 동등성은 유지됨.
-    print(boxedA == anotherBoxedA) //'true'를 출력
-
+    println(boxedA == anotherBoxedA) //'true'를 출력
 
     //명시적 변환
     //표현이 다르기 때문에 작은 범위 타입은 큰 범위 타입의 하위타입이 아니다. 만약 하위타입이 된다면 다음과 같은 상황에서 문제가 됨.
